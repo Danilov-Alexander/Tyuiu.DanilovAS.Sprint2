@@ -14,12 +14,12 @@ namespace Tyuiu.DanilovAS.Sprint2.Task0.V2
         static void Main(string[] args)
         {
             DataService ds = new DataService();
+          
 
             int x = 123;
             int y = 123;
             bool[] res = new bool[6];
             res = ds.GetCompareOperations(x, y);
-
 
             Console.Title = "Спринт #2 | Выполнил: Данилов А. С. | ИСТНб-23-1";
             Console.WriteLine("***************************************************************************");
