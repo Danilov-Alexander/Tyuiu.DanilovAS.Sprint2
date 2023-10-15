@@ -13,16 +13,19 @@ namespace Tyuiu.DanilovAS.Sprint2.Task5.V14.Lib
         public string FindDayName(int k, int d)
         {
             string res = "";
-            int temp = 365 % (k+1);
-            temp -= 1;
+            int temp =  k % 7 + d -1 ;
 
-            if (temp>7)
+            if (temp > 6)
             {
                 temp -= 7;
             }
 
             switch (temp)
             {
+                case 0:
+                    res = "Воскресенье";
+                    break;
+
                 case 1:
                     res =  "Понедельник";
                     break;
@@ -45,10 +48,6 @@ namespace Tyuiu.DanilovAS.Sprint2.Task5.V14.Lib
 
                 case 6:
                     res = "Суббота";
-                    break;
-
-                case 7:
-                    res = "Воскресенье";
                     break;
 
                 default:

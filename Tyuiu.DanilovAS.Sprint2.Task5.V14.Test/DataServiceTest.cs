@@ -19,7 +19,7 @@ namespace Tyuiu.DanilovAS.Sprint2.Task5.V14.Test
             Assert.AreEqual("Четверг", ds.FindDayName(4, 1));
             Assert.AreEqual("Пятница", ds.FindDayName(5, 1));
             Assert.AreEqual("Суббота", ds.FindDayName(6, 1));
-            //Assert.AreEqual("Воскресенье", ds.FindDayName(7, 1));
+            Assert.AreEqual("Воскресенье", ds.FindDayName(0, 1));
 
 
         }
