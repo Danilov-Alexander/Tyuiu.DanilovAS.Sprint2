@@ -33,7 +33,6 @@ namespace Tyuiu.DanilovAS.Sprint2.Task5.V14
 
             Console.Write("Номер дня в которм вы хотите узнать день недели: ");
             int k = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(365 % k);
             Console.Write("Каким днём недели является 1-е января?\n(Ввести цифру 1-7, где 1 - Понедельник, 7 - Воскресенье): ");
             int d = Convert.ToInt32(Console.ReadLine());
 
