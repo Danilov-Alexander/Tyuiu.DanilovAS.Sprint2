@@ -11,23 +11,19 @@ namespace Tyuiu.DanilovAS.Sprint2.Task7.V2.Lib
     public class DataService : ISprint2Task7V2
     {
         public bool CheckDotInShadedArea(double x, double y) 
-        { 
+        {
 
             bool res;
-
-
-            if (Math.Pow(x, 2) + Math.Pow(y, 2) <= 1) && (((2 * y) / x < 0);
+            if ((Math.Pow(x, 2) + Math.Pow(y, 2) <= 1) && ((y*x)/2)<0 && (x/(2*y)<0))
             {
-
                 res = true;
-                return res
             }
+
             else
             {
                 res = false;
-                return res
             }
-
+            return res;
         }
     }
 }

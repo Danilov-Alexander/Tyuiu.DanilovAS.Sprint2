@@ -12,7 +12,7 @@ namespace Tyuiu.DanilovAS.Sprint2.Task7.V2
     {
         static void Main(string[] args)
         {
-
+            DataService ds = new DataService();
             
             Console.Title = "Спринт #2 | Выполнил: Данилов А. С. | ИСТНб-23-1";
             Console.WriteLine("***************************************************************************");
@@ -31,15 +31,19 @@ namespace Tyuiu.DanilovAS.Sprint2.Task7.V2
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-
-
+            Console.Write("Введите значение X:  ");
+            double x = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введите значение Y: ");
+            double y = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine();
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-
+            bool res = ds.CheckDotInShadedArea(x, y);
+            Console.WriteLine(res);
+            Console.ReadKey();
         }
     }
 }
