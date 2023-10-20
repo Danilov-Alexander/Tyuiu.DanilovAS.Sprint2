@@ -42,7 +42,17 @@ namespace Tyuiu.DanilovAS.Sprint2.Task7.V2
             Console.WriteLine("***************************************************************************");
 
             bool res = ds.CheckDotInShadedArea(x, y);
-            Console.WriteLine(res);
+
+            if (res)
+            {
+                Console.WriteLine("Находится в заштрихованной области.");
+            }
+            else
+            {
+                Console.WriteLine("Не находится в заштрихованной области.");
+
+            }
+
             Console.ReadKey();
         }
     }
